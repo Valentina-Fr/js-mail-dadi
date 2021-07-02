@@ -13,4 +13,12 @@ var welcomePlaceholder = document.getElementById("welcome");
 console.table(addresses);
 console.log(userAddress);
 
+//Contrallare se l'email dell'utente è presente in lista
+var isListed = false
+
+for(i = 0; i < addresses.length; i++) {
+    if (userAddress === addresses[i]) {
+        var isListed = true
+    }
+}
 
