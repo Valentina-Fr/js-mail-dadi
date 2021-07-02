@@ -15,8 +15,9 @@ console.log(userAddress);
 
 //Contrallare se l'email dell'utente è presente in lista
 var isListed = false
+var len = addresses.length
 
-for(i = 0; i < addresses.length; i++) {
+for(var i = 0; i < len; i++) {
     if (userAddress === addresses[i]) {
         var isListed = true
     }
