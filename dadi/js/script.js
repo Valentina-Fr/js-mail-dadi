@@ -13,4 +13,11 @@ var result = document.getElementById("winner")
 document.getElementById("player").innerHTML = "Punti del giocatore: " + playerNumber
 document.getElementById("computer").innerHTML = "Punti del computer: " + cpuNumber
 
-
+//Confranta numeri e stampa risultato
+if (playerNumber > cpuNumber) {
+    result.innerHTML = "Vince il giocatore"
+} else if(playerNumber < cpuNumber) {
+    result.innerHTML = "Vince il computer"
+} else {
+    result.innerHTML = "Giocatore e computer pareggiano"
+}
