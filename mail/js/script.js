@@ -22,3 +22,9 @@ for(i = 0; i < addresses.length; i++) {
     }
 }
 
+//Stampare messaggio
+if (isListed) {
+    welcomePlaceholder.innerHTML = "Benvenuto/a nella tua casella e-mail"
+} else {
+    welcomePlaceholder.innerHTML = "Indirizzo non valido"
+}
